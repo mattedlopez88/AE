@@ -15,7 +15,6 @@ axios.interceptors.request.use((config) => {
     if (token) {
         config.headers.Authorization = `Bearer ${token}`;
     }
-    console.log(window.Inertia?.page?.props?.auth?.user)
     return config;
 });
 

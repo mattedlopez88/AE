@@ -36,10 +36,5 @@ class UserSeeder extends Seeder
         if (!$superAdmin->hasRole('super-admin')) {
             $superAdmin->assignRole($superAdminRole);
         }
-
-        $this->command->info('Super Admin created successfully!');
-        $this->command->info('Email: admin@andradeescobar.com');
-        $this->command->info('Password: password123');
-        $this->command->info('Role: super-admin');
     }
 }
